@@ -46,3 +46,4 @@ jobs:
         docker ps -a
         docker login -u ${{ secrets.login }} -p ${{ secrets.pass }}
         docker push vikakov/tecnoprogexam2022:latest
+
