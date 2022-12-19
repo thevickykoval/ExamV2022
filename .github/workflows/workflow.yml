@@ -41,8 +41,8 @@ jobs:
         CI: true
     - name: deploy
       run: |
-        docker build -t vikakov//tecnoprogexam2022 .
-        docker run -d -p 5000:5000 vikakov//tecnoprogexam2022 
+        docker build -t vikakov/tecnoprogexam2022 .
+        docker run -d -p 5000:5000 vikakov/tecnoprogexam2022 
         docker ps -a
         docker login -u ${{ secrets.login }} -p ${{ secrets.pass }}
-        docker push vikakov//tecnoprogexam2022:latest
+        docker push vikakov/tecnoprogexam2022:latest
